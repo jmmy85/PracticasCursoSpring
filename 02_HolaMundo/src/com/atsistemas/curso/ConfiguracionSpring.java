@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Scope;
 public class ConfiguracionSpring {
 
 	@Bean
+	@Scope("prototype")
 	public Saludador primerSaludador() {
 		return new SaludadorErrorImpl();
 	}

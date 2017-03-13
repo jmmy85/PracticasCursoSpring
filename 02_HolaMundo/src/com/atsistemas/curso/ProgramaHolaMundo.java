@@ -21,7 +21,10 @@ public class ProgramaHolaMundo {
 		Saludador otro = context.getBean("primerSaludador", Saludador.class);
 		
 		if(saludador==otro) {
-			System.out.print("Son el mismo");
+			System.out.print("Son el mismo.");
+		}
+		else {
+			System.out.println("No son el mismo.");
 		}
 		
 
