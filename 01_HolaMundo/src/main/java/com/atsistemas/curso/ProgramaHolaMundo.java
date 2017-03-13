@@ -16,6 +16,7 @@ public class ProgramaHolaMundo {
 		
 		// Usamos el bean obtenido del contenedor
 		saludador.saludar();
+//		Comentario de prueba
 
 	}
 
