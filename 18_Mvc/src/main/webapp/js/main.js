@@ -1,0 +1,3 @@
+function muestrameUnaAlerta() {
+	alert("Alerta!");
+}

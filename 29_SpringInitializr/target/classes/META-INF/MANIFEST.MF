@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: 29_SpringInitializr
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: jrbriones
+Implementation-Vendor-Id: com.atsistemas.curso
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/29_SpringIni
+ tializr/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

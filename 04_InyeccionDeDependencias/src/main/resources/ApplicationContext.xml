@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dao" class="com.atsistemas.curso.MemoriaPersonaDao"/>
+
+<!-- Inyección Setter -->
+<bean id="otroServicio" class="com.atsistemas.curso.Servicio">
+	<property name="dao" ref="dao"></property>
+	<property name="otro" ref="dao"></property>
+</bean>
+
+<!-- Inyección por constructor -->
+<!--
+<bean id="servicio" class="com.atsistemas.curso.Servicio">
+	<constructor-arg name="dao" ref="dao"/>
+</bean>
+ -->
+
+</beans>

@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.atsistemas.curso</groupId>
+    <artifactId>24_EjercicioClientesFacturas_v4_correcion</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>24_AplicacionWeb</artifactId>
+  <packaging>war</packaging>
+  <dependencies>
+  <dependency>
+  <groupId>${project.groupId}</groupId>
+  <artifactId>24_Controlador</artifactId>
+  <version>${project.version}</version>
+  </dependency>
+  <dependency>
+  <groupId>${project.groupId}</groupId>
+  <artifactId>24_Servicios</artifactId>
+  <version>${project.version}</version>
+  </dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-dbcp2</artifactId>
+    <version>2.1.1</version>
+</dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+<aop:config>
+
+<!-- Ejemplo genérico:
+<aop:pointcut expression="execution(claseRetorno paquete.clase.metodo(..)) throws tipoExcepcion && argumentos" id="persistencia"/>
+Los dos puntos significa "con los argumentos que sea. Pero se puede poner, por ejemplo, java.lang.String
+Para seleccionar cualquier paquete/clase/... se pone *
+tipoExcepcion debe ser el nombre canónico de la clase, por ejemplo, java.lang.Exception
+-->	
+<aop:pointcut expression="execution(* *.*.*(..)) throws java.lang.Exception" id="todasLasExcepciones"/>
+<aop:pointcut expression="execution(* com.atsistemas.curso.MiServicio.metodoInterceptado(java.lang.String)) &amp;&amp; args(num)" id="concreto"/>
+<aop:pointcut expression="execution(* com.atsistemas.curso.MiServicio.metodoInterceptado(java.lang.String))" id="retorno"/>
+
+<aop:aspect ref="aspecto">
+	<!--
+	<aop:before method="antesDelTarget" pointcut-ref="concreto" arg-names="num"/>
+	<aop:after method="despuesDelTarget" pointcut-ref="concreto" arg-names="num"/>
+	<aop:after-returning method="despuesDelTargetFiltrandoElResultado" pointcut-ref="retorno" returning="retorno"/>
+	<aop:around method="duranteElTarget" pointcut-ref="retorno"/>
+	 -->
+	 <!-- <aop:declare-parents types-matching="com.atsistemas.curso.MiServicio+"
+	 implement-interface="com.atsistemas.curso.Extension"
+	 default-impl="com.atsistemas.curso.ExtensionImpl"/> -->
+</aop:aspect>
+</aop:config>
+
+<bean id="aspecto" class="com.atsistemas.curso.Aspecto"></bean>
+<bean class="com.atsistemas.curso.MiServicio"></bean>
+
+</beans>
