@@ -13,10 +13,15 @@ public class ProgramaHolaMundo {
 		//Saludador saludador = context.getBean(Saludador.class);
 		//Saludador bean2 = (Saludador)context.getBean("primerSaludador");
 		Saludador saludador = context.getBean("primerSaludador",Saludador.class);
-		
-		// Usamos el bean obtenido del contenedor
 		saludador.saludar();
-//		Comentario de prueba
+		
+		Saludador otro = context.getBean("primerSaludador",Saludador.class);
+		if(saludador==otro) {
+			System.out.println("Son iguales!");
+		}
+		
+		Saludador segundo = context.getBean("segundoSaludador", Saludador.class);
+		segundo.saludar();
 
 	}
 

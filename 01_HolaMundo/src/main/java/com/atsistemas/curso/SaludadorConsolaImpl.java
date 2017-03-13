@@ -4,6 +4,6 @@ public class SaludadorConsolaImpl implements Saludador {
 
 	@Override
 	public void saludar(){
-		System.out.print("Hola mundo!!!");
+		System.out.println("Hola mundo!!!");
 	}
 }
