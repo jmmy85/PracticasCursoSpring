@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- En este proyecto se ha pedido hacerlo con anotaciones, pero este archivo es para ver cómo sería en XML -->
+
+<bean id="personas" class="java.util.HashMap"/>
+
+<bean class="com.atsistemas.curso.PersonaDaoImpl">
+<constructor-arg name="personas">
+<map>
+<entry>
+<key><value>1</value></key>
+<ref bean="vic"></ref>
+</entry>
+<entry>
+<key><value>2</value></key>
+<bean class="com.atsistemas.curso.Persona">
+<constructor-arg name="id" value="2"/>
+<constructor-arg name="nombre" value="Maria"/>
+</bean>
+</entry>
+</map>
+</constructor-arg>
+</bean>
+
+<bean id="vic" class="com.atsistemas.curso.Persona">
+<constructor-arg name="id" value="1"/>
+<constructor-arg name="nombre" value="Victor"/>
+</bean>
+
+</beans>
