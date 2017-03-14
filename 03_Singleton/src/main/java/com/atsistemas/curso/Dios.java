@@ -15,19 +15,13 @@ public class Dios {
 	
 	// Factoría instanciada
 	public Hombre fabricarAisatico(){
+		System.out.println("Fabricando asiático... OK");
 		return new Asiatico();
 	}
 	
 	public Hombre fabricarEuropeo(){
+		System.out.println("Fabricando europeo... OK");
 		return new Europeo();
-	}
-	
-	private class Asiatico implements Hombre{
-		
-	}
-	
-	private class Europeo implements Hombre{
-		
 	}
 
 }

@@ -2,9 +2,13 @@ package com.atsistemas.curso;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class JdbcPersonaDao implements PersonaDao {
 
 	public void insertar(Persona persona) {
+		System.out.println("Persona insertada por JDBC.");
 		// TODO Auto-generated method stub
 		
 	}

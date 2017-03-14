@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 public class MemoriaPersonaDao implements PersonaDao {
 
 	public void insertar(Persona persona) {
+		System.out.println("Persona insertada por memoria.");
 		// TODO Auto-generated method stub
 		
 	}
