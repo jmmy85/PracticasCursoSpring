@@ -1,0 +1,2 @@
+- Cuando se tiene varios beans del mismo tipo,
+	es necesario ponerles un Id y llamar a getBean(String nombre, Clase) en vez de getBean(Clase)

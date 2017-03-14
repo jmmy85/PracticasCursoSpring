@@ -1,0 +1,2 @@
+- Creación o registro de beans con fichero de configuración Java (anotaciones).
+- Tipo de instanciación de beans: singleton (por defecto) y prototype, entre otros.

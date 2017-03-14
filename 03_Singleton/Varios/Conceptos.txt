@@ -1,0 +1,4 @@
+- Casos en los que puede ser factible definir beans como singleton, prototype u otro.
+	Suponiendo que estamos en un mundo monoteísta:
+		Dios es singleton, sólo se instancia una vez.
+		Dios puede instanciar los hombres que quiera, el hombre es prototype

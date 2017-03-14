@@ -1,0 +1,2 @@
+¿Por qué es necesario definir los beans "asiático" y "europeo"?
+¿No sería suficiente con definir el bean "Hombre", o ni siquiera ése? He probado a comentarlos y funciona.

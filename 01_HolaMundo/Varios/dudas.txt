@@ -1,0 +1,1 @@
+¿Por qué pinta primero la línea de error antes que las otras si está después en el código?
